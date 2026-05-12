@@ -7,7 +7,7 @@ ruoyi:
   # 版权年份
   copyrightYear: 2026
   # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
-  profile: D:/ruoyi/uploadPath
+  profile: C:/ruoyi/uploadPath
   # 获取ip地址开关
   addressEnabled: false
   # 验证码类型 math 数字计算 char 字符验证
@@ -78,7 +78,7 @@ spring:
       # 数据库索引
       database: 0
       # 密码
-      password:
+      password: nimabi.000
       # 连接超时时间
       timeout: 10s
       lettuce:
@@ -145,3 +145,17 @@ xss:
   excludes: /system/notice
   # 匹配链接
   urlPatterns: /system/*,/monitor/*,/tool/*
+
+# AI大模型配置（兼容OpenAI/DeepSeek等API格式）
+ai:
+  api:
+    # 接口地址（DeepSeek: https://api.deepseek.com/chat/completions）
+    url: https://api.deepseek.com/chat/completions
+    # API密钥
+    key: sk-ae460d2c1c244e33b577b54208f291b8
+    # 模型名称（DeepSeek: deepseek-chat）
+    model: deepseek-chat
+    # 最大输出token数
+    max-tokens: 2048
+    # 温度参数（0-2，值越小输出越确定）
+    temperature: 0.7

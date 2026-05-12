@@ -54,6 +54,16 @@
             <artifactId>ruoyi-generator</artifactId>
         </dependency>
 
+        <!-- Apache Tika 文件内容提取 -->
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-parsers-standard-package</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
